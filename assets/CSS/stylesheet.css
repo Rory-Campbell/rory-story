@@ -1,0 +1,214 @@
+body { 
+    font-family: 'Kalam';
+    margin: 0px;
+
+}
+
+#top{ 
+    background-color: #F5F5DC;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+#main-navbar{
+    align-content: flex-end;
+    width: 100%;
+    background-color: #F5F5DC;
+    font-family: 'Kalam'; 
+    box-shadow: 0px 0px 0px 5px #251b19;
+    margin-bottom:1px;
+    padding-bottom: 1px; 
+}
+
+/* Styling for Comic Section */
+
+.comic{
+    display: grid;
+    width: 100%;
+    max-width: 770px;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; 
+    grid-gap: 25px;
+    padding-bottom: 10px;
+    
+}
+
+.panel {
+    background-color: white;
+    box-shadow: 0px 0px 0px 5px #251b19;
+    padding: 0;
+    border: 0;
+  }
+
+  .panel-img {
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    padding: 0;
+
+  }
+
+  .panel-title {
+      box-shadow: none;
+      background: none;
+  }
+
+  .panel-1 {
+      
+      background: none;
+  }   
+.panel-3{
+      box-shadow: none;
+      background: none;
+  }
+ 
+   
+.panel-5 {
+    background-color: black;
+     
+}
+
+.panel-7 {
+    box-shadow: none;
+    background: none;
+}
+
+
+
+
+
+  
+/* media query 1 */
+  @media only screen and (min-width: 300px){
+      .comic{
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto;
+        }
+        .panel-title{ 
+            grid-column: span 2;
+        }
+        .panel-3 {
+            grid-column: span 2;
+        }
+
+        .panel-6{
+            grid-column: span 1;
+        }
+        .panel-8 {
+            grid-column: span 2;
+            
+        }
+        .panel-7{
+            grid-column: span 2;
+        }
+
+  }
+
+    /* media query 2 */
+@media only screen and (min-width: 600px){
+    .comic{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .panel-title{ 
+        grid-column: span 3;
+    }
+
+    .panel-1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .panel-2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .panel-3{ 
+        display: flex;
+        align-items: center;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .panel-5{
+        grid-row: 3;
+        grid-column:2/3;
+    }
+
+    .panel-5-quote{
+        
+        z-index: 1;
+        grid-row: 3;
+        grid-column: 2/3;
+    }
+ #panel-5-quote-bottom {
+     padding-top: 80%;
+     align-items: baseline;
+ }
+
+    .panel-5-quote p {
+        text-align: center; 
+        color: white;
+    }
+
+    .panel-6{
+        grid-column: 3/4;
+    }
+
+    .panel-7{
+        grid-column: 1/4;
+    }
+
+    .panel-7 p{
+        text-align: center;
+    }
+
+    .panel-8 { 
+        grid-column: 2/3;
+    }
+
+    
+
+}
+
+/* Styling for Bio Section */
+
+#bottom{
+    display:block;
+    margin-top: 0px;
+    background-color: #D88A8A;
+}
+
+.bio{ 
+    display: grid;
+    width: 100%;
+    max-width: 770px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; 
+    grid-gap: 25px;
+
+}
+
+#intro-card {
+    justify-content: center;
+    
+}
+
+
+.content {
+    text-align: center;
+} 
+#bio-header { 
+    font-family: 'Kalam';
+}
